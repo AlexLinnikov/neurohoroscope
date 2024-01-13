@@ -1,0 +1,26 @@
+<!-- 
+1. Поле ввода имени пользователя
+2. Поле ввода даты рождения
+3. Кнопка сгенерировать
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your neurohoroscope prediction</title>
+</head>
+<body>
+    <h1>Нейрогороскоп</h1>
+    <form method="post" action="/generate">
+        <input type="text" name="user_name">
+        <input type="date" name="user_birthday">
+        <button type="submit">Сгенерировать</button>
+    </form>
+    <div class="prediction">
+        <p></p>
+    </div>
+</body>
+</html>
